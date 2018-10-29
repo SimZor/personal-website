@@ -1,32 +1,84 @@
-.App {
-  text-align: center;
+/* Fonts
+ * -------------------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css?family=Lora');
+
+/* Typing
+ * -------------------------------------------------- */
+
+h1, h2, h3, h4, h5, h6, p, span, small, a {
+  font-family: 'Lora', serif;
+  color: #444444;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
+/* Layout
+ * -------------------------------------------------- */
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  min-height: 100vh;
+  background: #f7f7f7 none;
 }
 
-.App-link {
-  color: #61dafb;
+header {
+  background: #fff none;
+  min-height: 125px;
+  box-shadow:
+    0 .1px 12px 0 rgba(109, 109, 109, 0.08), 
+    0 .1px 12px -2px rgba(109, 109, 109, 0.08),
+    0 .1px 12px 0 rgba(109, 109, 109, 0.08) !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+main {
+  flex: 1;
+}
+
+footer {
+  height: 50px;
+  margin-top: 30px;
+}
+
+/* Helpers
+ * -------------------------------------------------- */
+
+.container {
+  margin: 0 auto;
+  max-width: 800px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.inline-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  padding-top: 20px;
+}
+
+.inline-list li {
+  float: left;
+  padding-right: 16px;
+  padding-bottom: 20px;
+}
+
+/* Styling
+ * --------- */
+
+hr {
+  border: 0 !important;
+  height: 0 !important;
+  border-top: 0.7px solid rgba(0, 0, 0, 0.1) !important;
+  border-bottom: 0.7px solid rgba(0, 0, 0, 0.1) !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+a {
+  text-decoration: none;
+  color: #444444;
+}
+
+a:hover {
+  color: #000;
 }
