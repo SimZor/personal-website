@@ -36,7 +36,7 @@ class App extends Component {
                 </a>
               </li>
               <li>
-                <a href="">
+                <a href="https://s3.eu-central-1.amazonaws.com/simzor-public-content/pub_key.txt" target="_blank">
                   PGP Key
                 </a>
               </li>
